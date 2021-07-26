@@ -24,9 +24,10 @@ else
 	git clone "$GIT_REPO_URI" .
 fi
 
-# Create a Release file that apt can read
+# Create a Release/Packages file that apt can read
 echo "[*] Creating the Release file"
-dpkg-scanpackages . /dev/null > Release
+#dpkg-scanpackages . /dev/null > Release
+dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
 
 # Add the new source of debs to the sources.lst if needed
 echo "[*] Adding the repo to the system (if not already present)"
@@ -37,6 +38,6 @@ echo "[*] Updating apt to utilize the new repo"
 apt-get update
 
 # Remove the script itself
-echo "[*] Updating apt to utilize the new repo"
+echo "[*] Removing the script itself from the new apt repo"
 THIS_SCRIPT=`basename "$0"`
 rm "$APT_REPO_DIR/""$THIS_SCRIPT"
