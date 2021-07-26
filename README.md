@@ -5,3 +5,5 @@ I am not a fan of having loose files running around my system.
 So this is an APT repo for storing deb files not already in my APT repo.  
 
 # How to use
+1. Make sure you have *git* and *dpkg-dev*
+2. 
