@@ -37,7 +37,8 @@ grep -qxF 'deb [trusted=yes] file://'"$APT_REPO_DIR"' ./' $SOURCES_LIST || echo 
 echo "[*] Updating apt to utilize the new repo"
 apt-get update
 
-# Remove the script itself
-echo "[*] Removing the script itself from the new apt repo"
+# Remove the script/readme etc. files
+echo "[*] Removing unnecessary files from the new apt repo"
 THIS_SCRIPT=`basename "$0"`
 rm "$APT_REPO_DIR/""$THIS_SCRIPT"
+rm "$APT_REPO_DIR/""README.md"
