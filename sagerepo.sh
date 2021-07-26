@@ -4,6 +4,12 @@ APT_REPO_DIR="/opt/sagerepo"
 GIT_REPO_URI="https://github.com/keyboardsage/sagedebs"
 SOURCES_LIST="/etc/apt/sources.list"
 
+# Sanity check
+if [ "$(id -u)" -ne 0 ]; then
+	echo 'This script must be run by root (sudo)' >&2
+	exit 1
+fi
+
 # Create a directory for custom deb files
 echo "[*] Creating the repo directory"
 mkdir -p "$APT_REPO_DIR"
