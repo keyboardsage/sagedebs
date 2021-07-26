@@ -22,6 +22,9 @@ if [ "$(ls -A $APT_REPO_DIR/)" ]; then
 else
 	cd "$APT_REPO_DIR"
 	git clone "$GIT_REPO_URI" .
+	
+	# large files
+	wget "https://downloads.slack-edge.com/releases/linux/4.17.0/prod/x64/slack-desktop-4.17.0-amd64.deb"
 fi
 
 # Create a Release/Packages file that apt can read
