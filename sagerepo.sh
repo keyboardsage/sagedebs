@@ -26,6 +26,7 @@ else
 	# large files
 	wget "https://downloads.slack-edge.com/releases/linux/4.17.0/prod/x64/slack-desktop-4.17.0-amd64.deb"
 	wget "https://github.com/PowerShell/PowerShell/releases/download/v7.1.4/powershell_7.1.4-1.ubuntu.20.04_amd64.deb"
+	wget "https://launchpad.net/openfracas/0.6/0.6.1/+download/openfracas.deb"
 fi
 
 # Create a Release/Packages file that apt can read
