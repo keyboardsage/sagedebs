@@ -24,10 +24,11 @@ else
 	git clone "$GIT_REPO_URI" .
 	
 	# large files
-	wget "https://downloads.slack-edge.com/releases/linux/4.17.0/prod/x64/slack-desktop-4.17.0-amd64.deb"
+	wget "https://downloads.slack-edge.com/releases/linux/4.31.155/prod/x64/slack-desktop-4.31.155-amd64.deb"
 	wget "https://github.com/PowerShell/PowerShell/releases/download/v7.1.4/powershell_7.1.4-1.ubuntu.20.04_amd64.deb"
 	wget "https://launchpad.net/openfracas/0.6/0.6.1/+download/openfracas.deb"
 	wget "http://launchpadlibrarian.net/10780071/libglade2-ruby_0.16.0-10_all.deb"
+	wget "https://az764295.vo.msecnd.net/stable/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/code_1.77.3-1681292746_amd64.deb"
 fi
 
 # Create a Release/Packages file that apt can read
