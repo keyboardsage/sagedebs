@@ -10,7 +10,11 @@ if [ "$(id -u)" -ne 0 ]; then
 	exit 1
 fi
 
-# Create a directory for custom deb files
+# Create a new directory for custom deb files
+if [ -d "$APT_REPO_DIR" ]; then
+	echo "[*] Removing the old repo directory"
+	rm -rf "$APT_REPO_DIR"
+fi
 echo "[*] Creating the repo directory"
 mkdir -p "$APT_REPO_DIR"
 
@@ -29,6 +33,7 @@ else
 	#wget "https://launchpad.net/openfracas/0.6/0.6.1/+download/openfracas.deb"
 	#wget "http://launchpadlibrarian.net/10780071/libglade2-ruby_0.16.0-10_all.deb"
 	wget "https://az764295.vo.msecnd.net/stable/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/code_1.77.3-1681292746_amd64.deb"
+	wget "https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.deb"
 fi
 
 # Create a Release/Packages file that apt can read
