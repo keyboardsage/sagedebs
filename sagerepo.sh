@@ -32,8 +32,9 @@ else
 	wget "https://github.com/PowerShell/PowerShell/releases/download/v7.1.4/powershell_7.1.4-1.ubuntu.20.04_amd64.deb"
 	#wget "https://launchpad.net/openfracas/0.6/0.6.1/+download/openfracas.deb"
 	#wget "http://launchpadlibrarian.net/10780071/libglade2-ruby_0.16.0-10_all.deb"
-	wget "https://az764295.vo.msecnd.net/stable/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/code_1.77.3-1681292746_amd64.deb"
+	wget "https://az764295.vo.msecnd.net/stable/d037ac076cee195194f93ce6fe2bdfe2969cc82d/code_1.84.0-1698839401_amd64.deb"
 	wget "https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.deb"
+ 	wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
 fi
 
 # Create a Release/Packages file that apt can read
