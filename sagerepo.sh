@@ -35,6 +35,7 @@ else
 	wget "https://az764295.vo.msecnd.net/stable/d037ac076cee195194f93ce6fe2bdfe2969cc82d/code_1.84.0-1698839401_amd64.deb"
 	wget "https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.deb"
  	wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
+	wget "https://www.expressvpn.works/clients/linux/expressvpn_3.58.0.2-1_amd64.deb"
 fi
 
 # Create a Release/Packages file that apt can read
