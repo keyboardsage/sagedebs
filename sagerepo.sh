@@ -36,7 +36,7 @@ else
 	wget "https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.deb"
  	wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
 	wget "https://www.expressvpn.works/clients/linux/expressvpn_3.58.0.2-1_amd64.deb"
-	wget "https://dl.discordapp.net/apps/linux/0.0.58/discord-0.0.58.deb"
+	wget "https://dl.discordapp.net/apps/linux/0.0.60/discord-0.0.60.deb"
 fi
 
 # Create a Release/Packages file that apt can read
