@@ -40,7 +40,7 @@ wget "https://az764295.vo.msecnd.net/stable/d037ac076cee195194f93ce6fe2bdfe2969c
 wget "https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.deb"
 wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
 wget "https://www.expressvpn.works/clients/linux/expressvpn_3.58.0.2-1_amd64.deb"
-wget "https://dl.discordapp.net/apps/linux/0.0.79/discord-0.0.79.deb"
+wget "https://dl.discordapp.net/apps/linux/0.0.84/discord-0.0.84.deb"
 wget "https://download3.omnissa.com/software/CART25FQ2_LIN64_DEBPKG_2406/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.deb"
 
 # Create a Release/Packages file that apt can read
