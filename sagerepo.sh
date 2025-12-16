@@ -42,6 +42,7 @@ wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
 #wget "https://www.expressvpn.works/clients/linux/expressvpn_3.58.0.2-1_amd64.deb"
 #wget "https://dl.discordapp.net/apps/linux/0.0.99/discord-0.0.99.deb"
 wget "https://stable.dl2.discordapp.net/apps/linux/0.0.119/discord-0.0.119.deb"
+wget "https://github.com/hashicorp/vagrant-vmware-desktop/releases/download/utility-v1.0.24%2Bpkgs-a981ff7/vagrant-vmware-utility_1.0.24-1_amd64.deb"
 wget "https://download3.omnissa.com/software/CART25FQ2_LIN64_DEBPKG_2406/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.deb"
 
 # Create a Release/Packages file that apt can read
